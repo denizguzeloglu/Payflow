@@ -125,26 +125,40 @@ export function Hero() {
               </div>
               
               {/* Dashboard Content */}
-              <div className="p-8 bg-gray-50 dark:bg-gray-900">
-                {/* Stats */}
-                <div className="grid grid-cols-3 gap-4 mb-8">
-                  <div className="bg-white dark:bg-gray-800 rounded-xl p-4">
-                    <div className="text-2xl font-bold text-gray-900 dark:text-white">$24,892</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Revenue today</div>
+              <div className="p-4 sm:p-6 lg:p-8 bg-gray-50 dark:bg-gray-900">
+                {/* Stats - Responsive Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg sm:rounded-xl p-3 sm:p-4">
+                    <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white truncate">
+                      $24,892
+                    </div>
+                    <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+                      Revenue today
+                    </div>
                   </div>
-                  <div className="bg-white dark:bg-gray-800 rounded-xl p-4">
-                    <div className="text-2xl font-bold text-gray-900 dark:text-white">482</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Transactions</div>
+                  <div className="bg-white dark:bg-gray-800 rounded-lg sm:rounded-xl p-3 sm:p-4">
+                    <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white">
+                      482
+                    </div>
+                    <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+                      Transactions
+                    </div>
                   </div>
-                  <div className="bg-white dark:bg-gray-800 rounded-xl p-4">
-                    <div className="text-2xl font-bold text-gray-900 dark:text-white">99.8%</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Success rate</div>
+                  <div className="bg-white dark:bg-gray-800 rounded-lg sm:rounded-xl p-3 sm:p-4">
+                    <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white">
+                      99.8%
+                    </div>
+                    <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+                      Success rate
+                    </div>
                   </div>
                 </div>
                 
-                {/* Chart Placeholder */}
-                <div className="bg-white dark:bg-gray-800 rounded-xl p-6 h-48 flex items-center justify-center">
-                  <div className="text-gray-400 dark:text-gray-600">Revenue Chart</div>
+                {/* Chart Placeholder - Responsive Height */}
+                <div className="bg-white dark:bg-gray-800 rounded-lg sm:rounded-xl p-4 sm:p-6 h-32 sm:h-40 lg:h-48 flex items-center justify-center">
+                  <div className="text-gray-400 dark:text-gray-600 text-sm sm:text-base">
+                    Revenue Chart
+                  </div>
                 </div>
               </div>
             </div>
