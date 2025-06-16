@@ -3,20 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-  }
-
-  .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-  }
-}
-
-@layer base {
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply antialiased;
   }
 }
 
@@ -71,4 +59,9 @@
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent;
 }
