@@ -149,7 +149,7 @@ export function Features() {
     <section
       ref={sectionRef}
       id="features"
-      className="py-16 sm:py-20 lg:py-32 bg-white dark:bg-gray-900 relative overflow-hidden"
+      className="py-12 sm:py-20 lg:py-32 bg-white dark:bg-gray-900 relative overflow-hidden"
     >
       {/* Background Pattern - Subtle on mobile */}
       <div className="absolute inset-0 bg-[url('/dots.svg')] opacity-[0.03] sm:opacity-5" />
