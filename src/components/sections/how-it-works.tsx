@@ -95,7 +95,7 @@ export function HowItWorks() {
     <section
       ref={sectionRef}
       id="how-it-works"
-      className="py-16 sm:py-20 lg:py-32 bg-gray-50 dark:bg-gray-950 relative overflow-hidden"
+      className="py-12 sm:py-20 lg:py-32 bg-gray-50 dark:bg-gray-950 relative overflow-hidden"
     >
       {/* Background Elements - Reduced on mobile */}
       <div className="absolute top-20 right-0 w-64 sm:w-96 h-64 sm:h-96 bg-primary-200/10 sm:bg-primary-200/20 dark:bg-primary-800/10 sm:dark:bg-primary-800/20 rounded-full blur-2xl sm:blur-3xl" />
