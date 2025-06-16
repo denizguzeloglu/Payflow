@@ -109,13 +109,42 @@ export function Hero() {
         <div className="mt-16 max-w-5xl mx-auto">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-primary-600/20 to-secondary-600/20 blur-3xl" />
-            <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 p-2">
-              <div className="bg-gray-100 dark:bg-gray-900 rounded-xl aspect-[16/9] flex items-center justify-center">
-                <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl mb-4">
-                    <div className="w-8 h-8 bg-white rounded" />
+            <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden">
+              {/* Browser Chrome */}
+              <div className="bg-gray-100 dark:bg-gray-900 px-4 py-3 flex items-center gap-2">
+                <div className="flex gap-1.5">
+                  <div className="w-3 h-3 bg-red-500 rounded-full" />
+                  <div className="w-3 h-3 bg-yellow-500 rounded-full" />
+                  <div className="w-3 h-3 bg-green-500 rounded-full" />
+                </div>
+                <div className="flex-1 flex justify-center">
+                  <div className="bg-white dark:bg-gray-800 rounded px-3 py-1 text-xs text-gray-600 dark:text-gray-400">
+                    app.payflow.com
                   </div>
-                  <p className="text-gray-500 dark:text-gray-400">Dashboard Preview</p>
+                </div>
+              </div>
+              
+              {/* Dashboard Content */}
+              <div className="p-8 bg-gray-50 dark:bg-gray-900">
+                {/* Stats */}
+                <div className="grid grid-cols-3 gap-4 mb-8">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl p-4">
+                    <div className="text-2xl font-bold text-gray-900 dark:text-white">$24,892</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">Revenue today</div>
+                  </div>
+                  <div className="bg-white dark:bg-gray-800 rounded-xl p-4">
+                    <div className="text-2xl font-bold text-gray-900 dark:text-white">482</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">Transactions</div>
+                  </div>
+                  <div className="bg-white dark:bg-gray-800 rounded-xl p-4">
+                    <div className="text-2xl font-bold text-gray-900 dark:text-white">99.8%</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">Success rate</div>
+                  </div>
+                </div>
+                
+                {/* Chart Placeholder */}
+                <div className="bg-white dark:bg-gray-800 rounded-xl p-6 h-48 flex items-center justify-center">
+                  <div className="text-gray-400 dark:text-gray-600">Revenue Chart</div>
                 </div>
               </div>
             </div>
